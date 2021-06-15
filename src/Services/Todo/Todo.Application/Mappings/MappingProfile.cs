@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Todo.Application.Features.Todo.Commands.AddOrder;
-using Todo.Application.Features.Todo.Queries.GetTodoItem;
+using Todo.Application.Features.Todo.Commands.CreateTodoItem;
+using Todo.Application.Features.Todo.Queries.GetTodoItems;
 
 namespace Todo.Application.Mappings
 {

@@ -12,8 +12,11 @@ namespace Todo.Infrastructure
     {
         public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<TodoContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("TodoConnectionString")));
+            //services.AddDbContext<TodoContext>(options =>
+            //    options.UseSqlServer(configuration.GetConnectionString("TodoConnectionString")));
+
+            services.AddDbContext<TodoContext>(options => options.UseNpgsql(configuration.GetConnectionString("ConnectionString")));
+
 
             services.AddScoped(typeof(IAsyncRepository<>), typeof(RepositoryBase<>));
             services.AddScoped<ITodoRepository, TodoRepository>();
