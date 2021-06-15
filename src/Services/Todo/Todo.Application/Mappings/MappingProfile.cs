@@ -15,8 +15,7 @@ namespace Todo.Application.Mappings
         {
             CreateMap<Todo.Domain.Entities.TodoItem, CreateTodoItemCommand>().ReverseMap();
             CreateMap<Todo.Domain.Entities.TodoItem, TodoItemDto>().ReverseMap();
-            //CreateMap<Order, CheckoutOrderCommand>().ReverseMap();
-            //CreateMap<Order, UpdateOrderCommand>().ReverseMap();
+    
         }
     }
 }
