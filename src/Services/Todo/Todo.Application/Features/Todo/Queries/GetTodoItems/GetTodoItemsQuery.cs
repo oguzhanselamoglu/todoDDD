@@ -20,6 +20,7 @@ namespace Todo.Application.Features.Todo.Queries.GetTodoItems
     public class GetTodoItemsQuery: IRequest<List<TodoItemDto>>
     {
         public int Id { get; set; }
+        
     }
 
     public class GetTodoItemQueryHandler : IRequestHandler<GetTodoItemsQuery, List<TodoItemDto>>
